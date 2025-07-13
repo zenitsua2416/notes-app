@@ -21,7 +21,7 @@ export const NotePage = () => {
   setTitle(note.title);
 
   return (
-    <div className="max-w-app mx-auto pt-5">
+    <div className="max-w-app mx-auto w-[min(app,100%)] pt-5">
       <div className="px-2">
         <h1 className="text-center text-3xl font-semibold">Note App</h1>
         <div className="mt-10 flex flex-col gap-4">

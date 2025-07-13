@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --app-size: 1024px;
+}
+
 * {
   transition: all 100ms ease-in-out;
 }

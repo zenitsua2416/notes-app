@@ -17,7 +17,10 @@ export default {
     },
     extend: {
       maxWidth: {
-        app: "1024px",
+        app: "var(--app-size)",
+      },
+      width: {
+        app: "var(--app-size)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -25,5 +28,14 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [
+    heroui(),
+    function ({ addBase }) {
+      addBase({
+        ":root": {
+          "--app-size": "1024px",
+        },
+      });
+    },
+  ],
 };
